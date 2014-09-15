@@ -1,7 +1,7 @@
 font-awesome-controls
 =====================
 
-Checkboxes and Radio buttons made using font-awesome icons
+Checkboxes and Radio buttons made using Font Awesome icons
 
 For usage take a look at the: [Demo]()
 

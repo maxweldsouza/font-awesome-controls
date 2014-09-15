@@ -1,0 +1,133 @@
+/*!
+ * Font Awesome Controls
+ * fac.css
+ * Copyright Maxwel D'souza
+ * MIT Licence
+ */
+
+.fac {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.fac label {
+    margin: 0px;
+    padding-left: 1.5em;
+    cursor:pointer;
+    font-weight:inherit;
+}
+
+.fac > input + label:before,
+.fac > span::after {
+    font-family: FontAwesome;
+    position:absolute;
+    left:0;
+}
+
+.fac > input + label:before { 
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+input {
+    display:none; 
+}
+
+/********* Behavior ***********/
+
+.fac-checkbox > input + label:before,
+.fac-checkbox-round > input + label:before {
+    opacity: 1;
+}
+
+.fac-checkbox > input:checked + label:before,
+.fac > input:checked + label:before {
+    opacity: 0;
+}
+
+.fac-radio > input + label:before,
+.fac-checkbox-o > input + label:before,
+.fac-checkbox-round-o > input + label:before {
+    opacity: 0;
+}
+.fac-radio > input:checked + label:before,
+.fac-checkbox-o > input:checked + label:before,
+.fac-checkbox-round-o > input:checked + label:before {
+    opacity: 1;
+}
+/********* Sizes ***********/
+
+.fac-2x {
+    font-size: 2em;
+}
+
+/********* Colors ***********/
+
+.fac-default > input + label:before,
+.fac-default > span::after {
+    color: #000000;
+}
+.fac-primary > input + label:before,
+.fac-primary > span::after {
+    color: #428bca;
+}
+.fac-success > input + label:before,
+.fac-success > span::after {
+    color: #5cb85c;
+}
+.fac-info > input + label:before,
+.fac-info > span::after {
+    color: #5bc0de;
+}
+.fac-warning > input + label:before,
+.fac-warning > span::after {
+    color: #f0ad4e;
+}
+.fac-danger > input + label:before,
+.fac-danger > span::after {
+    color: #d9534f;
+}
+
+/********* Controls ***********/
+
+.fac-checkbox > span::after {
+    content: "\f14a"; /* checked */
+}
+.fac-checkbox > input[type=checkbox] + label:before { 
+    content: "\f0c8";
+}
+
+.fac-checkbox-round > span::after {
+    content: "\f058";
+}
+.fac-checkbox-round > input[type=checkbox] + label:before {  
+    content: "\f111";
+}
+
+.fac-checkbox-o > span::after {
+    content: "\f096";  
+}
+.fac-checkbox-o > input[type=checkbox] + label:before {  
+    content: "\f046";
+}
+
+.fac-checkbox-round-o > span::after {
+    content: "\f10c";  
+}
+.fac-checkbox-round-o > input[type=checkbox] + label:before {  
+    content: "\f05d";
+}
+
+.fac-radio > span::after {
+    content: "\f10c";
+}
+.fac-radio > input[type=radio] + label:before { 
+    content: "\f192";
+} 
